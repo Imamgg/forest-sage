@@ -233,10 +233,9 @@ const Stockists = () => {
                             {stockist.name.toUpperCase()}
                           </h3>
                           <span
-                            className={`shrink-0 text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full ${
-                              typeColors[stockist.type] ||
+                            className={`shrink-0 text-[9px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full ${typeColors[stockist.type] ||
                               "bg-muted text-muted-foreground"
-                            }`}
+                              }`}
                           >
                             {stockist.type}
                           </span>
@@ -258,24 +257,24 @@ const Stockists = () => {
           </section>
 
           {/* Become a stockist CTA */}
-          <section className="bg-foreground text-cream rounded-[3rem] sm:rounded-6xl py-14 sm:py-20 md:py-28 px-4 sm:px-6 md:px-10 mx-2 sm:mx-4 mb-4">
+          <section className="bg-foreground text-secondary rounded-[3rem] sm:rounded-6xl py-14 sm:py-20 md:py-28 px-4 sm:px-6 md:px-10 mx-2 sm:mx-4 mb-4">
             <div className="max-w-3xl mx-auto text-center">
-              <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-cream/40 mb-4 block">
+              <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary/50 mb-4 block">
                 Kemitraan
               </span>
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-cream leading-[0.9] mb-5">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-secondary leading-[0.9] mb-5">
                 JUAL PRODUK
                 <br />
                 KAMI DI TOKOMU
               </h2>
-              <p className="font-body text-sm sm:text-base text-cream/50 max-w-md mx-auto mb-8 leading-relaxed">
+              <p className="font-body text-sm sm:text-base text-secondary/70 max-w-md mx-auto mb-8 leading-relaxed">
                 Kami terbuka bermitra dengan toko dan apotek yang berbagi nilai
                 yang sama. Minimum order kecil, margin kompetitif, dan kami
                 menyediakan dukungan brand secara penuh.
               </p>
               <a
-                href="mailto:kemitraan@forest-sage.id"
-                className="inline-block px-8 py-3 rounded-full bg-cream text-foreground text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-sage transition-colors duration-300"
+                href="mailto:404imamgg@gmail.com"
+                className="inline-block px-8 py-3 rounded-full bg-secondary text-foreground text-[11px] font-bold uppercase tracking-[0.2em] hover:text-cream transition-colors duration-300"
               >
                 Hubungi Kami
               </a>

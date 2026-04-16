@@ -202,19 +202,19 @@ const Story = () => {
             className="bg-foreground text-cream rounded-[3rem] sm:rounded-6xl py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-10 mx-2 sm:mx-4 mb-4"
           >
             <div className="max-w-3xl mx-auto text-center scroll-reveal">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-6xl text-cream leading-[0.9] mb-6">
+              <h2 className="font-display text-3xl sm:tex t-4xl md:text-6xl text-secondary leading-[0.9] mb-6">
                 RASAKAN
                 <br />
                 NUSANTARA
               </h2>
-              <p className="font-body text-sm sm:text-base text-cream/60 max-w-md mx-auto mb-8 leading-relaxed">
+              <p className="font-body text-sm sm:text-base text-secondary/60 max-w-md mx-auto mb-8 leading-relaxed">
                 Jelajahi koleksi rempah dan jamu kami - setiap produk adalah
                 penghormatan terhadap kekayaan alam dan kearifan leluhur
                 Nusantara.
               </p>
               <a
                 href="/#shop"
-                className="inline-block px-8 py-3 rounded-full bg-cream text-foreground text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-sage transition-colors duration-300"
+                className="inline-block px-8 py-3 rounded-full bg-secondary text-foreground text-[11px] font-bold uppercase tracking-[0.2em] hover:text-cream transition-colors duration-300"
               >
                 Lihat Koleksi
               </a>

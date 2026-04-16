@@ -24,9 +24,12 @@ const ProductGrid = () => {
         >
           KOLEKSI
         </h2>
-        <button className="mt-4 md:mt-0 flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full bg-foreground text-background hover:scale-105 transition-transform duration-500 cursor-pointer shadow-forest">
+        <Link
+          to="/koleksi"
+          className="mt-4 md:mt-0 flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full bg-foreground text-background hover:scale-105 transition-transform duration-500 cursor-pointer shadow-forest"
+        >
           <ArrowRight size={20} className="sm:w-7 sm:h-7" />
-        </button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5">

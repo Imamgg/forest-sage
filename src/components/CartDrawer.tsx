@@ -34,10 +34,10 @@ const CartDrawer = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed top-0 right-0 bottom-0 z-[70] w-full sm:max-w-md bg-cream flex flex-col shadow-forest-lg"
+            className="fixed top-0 right-0 bottom-0 z-[70] w-full sm:max-w-md bg-background flex flex-col shadow-forest-lg"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-foreground/10">
+            <div className="flex items-center justify-between px-6 py-5 border-b border-border/20">
               <div className="flex items-center gap-3">
                 <ShoppingBag size={18} className="text-foreground" />
                 <span className="font-body font-bold text-[11px] uppercase tracking-editorial-wide text-foreground">
@@ -115,7 +115,7 @@ const CartDrawer = () => {
 
                           <div className="flex items-center justify-between">
                             {/* Quantity */}
-                            <div className="flex items-center border border-foreground/15 rounded-full overflow-hidden">
+                            <div className="flex items-center border border-border/30 rounded-full overflow-hidden">
                               <button
                                 onClick={() =>
                                   updateQuantity(
@@ -165,7 +165,7 @@ const CartDrawer = () => {
 
             {/* Footer */}
             {items.length > 0 && (
-              <div className="px-6 py-6 border-t border-foreground/10">
+              <div className="px-6 py-6 border-t border-border/20">
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground">
                     Total ({totalItems} item)
