@@ -174,9 +174,13 @@ const CartDrawer = () => {
                     Rp {totalPrice.toLocaleString("id-ID")}
                   </span>
                 </div>
-                <button className="w-full py-4 rounded-full bg-foreground text-background text-[11px] font-bold uppercase tracking-[0.3em] hover:scale-[1.02] transition-transform duration-500 shadow-forest">
+                <Link
+                  to="/checkout"
+                  onClick={closeCart}
+                  className="block w-full py-4 rounded-full bg-foreground text-background text-[11px] font-bold uppercase tracking-[0.3em] hover:scale-[1.02] transition-transform duration-500 shadow-forest text-center"
+                >
                   Checkout
-                </button>
+                </Link>
                 <button
                   onClick={closeCart}
                   className="w-full mt-3 py-3 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/60 hover:text-foreground transition-colors text-center"
