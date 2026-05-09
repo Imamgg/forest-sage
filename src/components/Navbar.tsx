@@ -1,4 +1,4 @@
-import { ShoppingBag, Menu, X, Sun, Moon } from "lucide-react";
+import { ShoppingBag, Menu, X, Sun, Moon, Leaf } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { useTheme } from "@/hooks/useTheme";
 import { Link } from "react-router-dom";
@@ -20,8 +20,16 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 md:py-4">
-        <Link to="/" className="font-display text-lg md:text-xl text-foreground tracking-tight">
-          — WARISAN
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-display text-foreground"
+        >
+          <div className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-foreground flex items-center justify-center">
+            <Leaf size={18} className="md:w-5 md:h-5 text-background" />
+          </div>
+          <span className="hidden sm:inline text-sm md:text-base tracking-tight">
+            WARISAN
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1 px-6 py-2 rounded-full backdrop-blur-[20px] bg-[hsla(0,0%,100%,0.1)] border border-[hsla(0,0%,100%,0.15)]">
@@ -60,7 +68,9 @@ const Navbar = () => {
             className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full bg-cream text-forest"
           >
             <ShoppingBag size={14} className="sm:w-4 sm:h-4" />
-            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em]">Cart</span>
+            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em]">
+              Cart
+            </span>
             <span className="flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-foreground text-background text-[8px] sm:text-[9px] font-bold">
               {totalItems}
             </span>
